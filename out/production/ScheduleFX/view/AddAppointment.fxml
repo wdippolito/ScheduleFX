@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="378.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddAppointment">
+   <children>
+      <Label layoutX="43.0" layoutY="38.0" text="Add Appointment" />
+      <Label layoutX="45.0" layoutY="75.0" text="ID" />
+      <Label layoutX="45.0" layoutY="110.0" text="Title" />
+      <Label layoutX="45.0" layoutY="145.0" text="Type" />
+      <Label layoutX="45.0" layoutY="180.0" text="Description" />
+      <Label layoutX="45.0" layoutY="215.0" text="Location" />
+      <Label layoutX="45.0" layoutY="250.0" text="Start Date" />
+      <Label layoutX="45.0" layoutY="285.0" text="Start Time" />
+      <Label layoutX="45.0" layoutY="320.0" text="End Date" />
+      <Label layoutX="45.0" layoutY="355.0" text="End Time" />
+      <Label layoutX="45.0" layoutY="460.0" text="Customer ID" />
+      <Label layoutX="45.0" layoutY="425.0" text="User ID" />
+      <Label layoutX="45.0" layoutY="390.0" text="Contact" />
+      <DatePicker fx:id="startDate" layoutX="135.0" layoutY="245.0" />
+      <DatePicker fx:id="apptEndDate" layoutX="135.0" layoutY="315.0" />
+      <ChoiceBox fx:id="startHour" layoutX="135.0" layoutY="280.0" prefHeight="26.0" prefWidth="53.0" />
+      <ChoiceBox fx:id="startMinute" layoutX="195.0" layoutY="280.0" prefHeight="26.0" prefWidth="53.0" />
+      <ChoiceBox fx:id="endHour" layoutX="135.0" layoutY="350.0" prefHeight="26.0" prefWidth="53.0" />
+      <ChoiceBox fx:id="endMinute" layoutX="195.0" layoutY="350.0" prefHeight="26.0" prefWidth="53.0" />
+      <TextField fx:id="apptID" editable="false" layoutX="135.0" layoutY="70.0" />
+      <TextField fx:id="apptTitle" layoutX="135.0" layoutY="105.0" />
+      <TextField fx:id="apptType" layoutX="135.0" layoutY="140.0" />
+      <TextField fx:id="apptDescription" layoutX="135.0" layoutY="175.0" />
+      <TextField fx:id="apptLocation" layoutX="135.0" layoutY="210.0" />
+      <ChoiceBox fx:id="apptContact" layoutX="135.0" layoutY="385.0" prefHeight="26.0" prefWidth="160.0" />
+      <ChoiceBox fx:id="userID" layoutX="135.0" layoutY="420.0" prefHeight="26.0" prefWidth="160.0" />
+      <ChoiceBox fx:id="customerID" layoutX="135.0" layoutY="455.0" prefHeight="26.0" prefWidth="160.0" />
+      <Button fx:id="saveButton" layoutX="228.0" layoutY="492.0" mnemonicParsing="false" onAction="#onClickSave" text="Save" />
+      <Button fx:id="cancelButton" layoutX="135.0" layoutY="492.0" mnemonicParsing="false" onAction="#onClickCancel" text="Cancel" />
+   </children>
+</AnchorPane>

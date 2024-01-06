@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.ModifyAppointment"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Label layoutX="43.0" layoutY="38.0" text="Modify Appointment" />
+        <Label layoutX="45.0" layoutY="75.0" text="ID" />
+        <Label layoutX="45.0" layoutY="110.0" text="Title" />
+        <Label layoutX="45.0" layoutY="145.0" text="Type" />
+        <Label layoutX="45.0" layoutY="180.0" text="Description" />
+        <Label layoutX="45.0" layoutY="215.0" text="Location" />
+        <Label layoutX="45.0" layoutY="250.0" text="Start Date" />
+        <Label layoutX="45.0" layoutY="285.0" text="Start Time" />
+        <Label layoutX="45.0" layoutY="320.0" text="End Date" />
+        <Label layoutX="45.0" layoutY="355.0" text="End Time" />
+        <Label layoutX="45.0" layoutY="460.0" text="Customer ID" />
+        <Label layoutX="45.0" layoutY="425.0" text="User ID" />
+        <Label layoutX="45.0" layoutY="390.0" text="Contact" />
+        <DatePicker layoutX="135.0" layoutY="245.0" />
+        <DatePicker layoutX="135.0" layoutY="315.0" />
+        <ChoiceBox layoutX="135.0" layoutY="280.0" prefWidth="150.0" />
+        <ChoiceBox layoutX="135.0" layoutY="350.0" prefWidth="150.0" />
+        <TextField fx:id="apptID" layoutX="135.0" layoutY="70.0" />
+        <TextField fx:id="apptTitle" layoutX="135.0" layoutY="105.0" />
+        <TextField fx:id="apptType" layoutX="135.0" layoutY="140.0" />
+        <TextField fx:id="apptDescription" layoutX="135.0" layoutY="175.0" />
+        <TextField fx:id="apptLocation" layoutX="135.0" layoutY="210.0" />
+        <ChoiceBox layoutX="135.0" layoutY="385.0" prefWidth="150.0" />
+        <ChoiceBox layoutX="135.0" layoutY="420.0" prefWidth="150.0" />
+        <ChoiceBox layoutX="135.0" layoutY="455.0" prefWidth="150.0" />
+        <Button fx:id="saveButton"  layoutX="228.0" layoutY="492.0" mnemonicParsing="false" text="Save" onAction="#onClickSave"/>
+        <Button fx:id="cancelButton"  layoutX="135.0" layoutY="492.0" mnemonicParsing="false" text="Cancel" onAction="#onClickCancel" />
+    </children>
+</AnchorPane>

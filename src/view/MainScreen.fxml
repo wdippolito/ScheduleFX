@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainScreen">
+    <children>
+    <Label layoutX="25.0" layoutY="23.0" text="Appointments" textAlignment="CENTER">
+         <font>
+            <Font name="Apple Braille" size="20.0" />
+         </font></Label>
+      <TableView fx:id="apptTable" layoutX="14.0" layoutY="60.0" prefHeight="164.0" prefWidth="659.0">
+        <columns>
+            <TableColumn fx:id="apptID" prefWidth="32.0" text="ID" />
+            <TableColumn fx:id="apptTitle" prefWidth="81.0" text="Title" />
+            <TableColumn fx:id="apptDescription" prefWidth="82.0" text="Description" />
+            <TableColumn fx:id="apptLocation" prefWidth="105.0" text="Location" />
+            <TableColumn fx:id="apptContact" prefWidth="75.0" text="Contact" />
+            <TableColumn fx:id="apptType" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="appsStart" prefWidth="75.0" text="Start" />
+            <TableColumn fx:id="apptEnd" prefWidth="75.0" text="End" />
+            <TableColumn fx:id="apptCustomerID" prefWidth="75.0" text="Customer_ID" />
+            <TableColumn fx:id="apptUserID" prefWidth="75.0" text="User_ID" />
+        </columns>
+      </TableView>
+      <TableView fx:id="custTable" layoutX="14.0" layoutY="289.0" prefHeight="164.0" prefWidth="659.0">
+         <columns>
+             <TableColumn fx:id="custID" prefWidth="32.0" text="ID" />
+             <TableColumn fx:id="custName" prefWidth="81.0" text="Name" />
+             <TableColumn fx:id="custAddress" prefWidth="82.0" text="Address" />
+             <TableColumn fx:id="custPhoneNumber" prefWidth="105.0" text="Phone Number" />
+             <TableColumn fx:id="custPostalCode" prefWidth="75.0" text="Postal Code" />
+             <TableColumn fx:id="custDivision" prefWidth="75.0" text="State/Province" />
+             <TableColumn fx:id="custCountry" prefWidth="75.0" text="Country" />
+         </columns>
+      </TableView>
+      <Button fx:id="addAppt" layoutX="39.0" layoutY="231.0" mnemonicParsing="false" onAction="#onAddApptClick" text="Add" />
+      <Button fx:id="modifyAppt" layoutX="114.0" layoutY="231.0" mnemonicParsing="false" onAction="#onModifyApptClick" text="Modify" />
+      <Button fx:id="deleteAppt" layoutX="244.0" layoutY="231.0" mnemonicParsing="false" onAction="#onDeleteApptClick" text="Delete" />
+      <Button fx:id="addCust" layoutX="39.0" layoutY="454.0" mnemonicParsing="false" onAction="#onAddCustClick" text="Add" />
+      <Button fx:id="modifyCust" layoutX="129.0" layoutY="454.0" mnemonicParsing="false" onAction="#onAddModifyCustClick" text="Modify" />
+      <Button fx:id="deleteCust" layoutX="244.0" layoutY="454.0" mnemonicParsing="false" onAction="#onDeleteCustClick" text="Delete" />
+      <Button fx:id="logout" layoutX="511.0" layoutY="454.0" mnemonicParsing="false" onAction="#onLogoutClick" text="Log out" />
+      <Button fx:id="reports" layoutX="711.0" layoutY="276.0" mnemonicParsing="false" onAction="#onReportClick" text="Reports" />
+      <Label layoutX="25.0" layoutY="263.0" text="Customers">
+         <font>
+            <Font name="Apple Braille" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="304.0" layoutY="231.0" prefHeight="27.0" prefWidth="115.0" text="Appointment Alert:" textFill="#e40c0c" />
+      <Label fx:id="apptAlert" layoutX="430.0" layoutY="231.0" prefHeight="27.0" prefWidth="300.0" text="" textFill="#e40c0c" />
+        <RadioButton fx:id="monthly" layoutX="200.0" layoutY="26.0" mnemonicParsing="false"  text="Monthly">
+        <toggleGroup>
+            <ToggleGroup fx:id="group" />
+            </toggleGroup></RadioButton>
+        <RadioButton fx:id="weekly" layoutX="287.0" layoutY="26.0" mnemonicParsing="false" text="Weekly" toggleGroup="$group" />
+        <RadioButton fx:id="all" layoutX="399.0" layoutY="26.0" mnemonicParsing="false" selected="true" text="All" toggleGroup="$group" />
+    </children>
+</AnchorPane>
